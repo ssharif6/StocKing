@@ -1,4 +1,6 @@
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -27,14 +29,6 @@ public class RedditSearchScaper {
         this.query = query;
     }
 
-
-//    public List<LinkModel> getRedditLinksLocally() throws FileNotFoundException {
-//
-//    }
-
-
-
-
     public List<LinkModel> getRedditLinksFromWeb() throws ProtocolException {
 
         StringBuilder sb = new StringBuilder();
@@ -44,6 +38,7 @@ public class RedditSearchScaper {
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
+            conn.setRequestProperty("User-agent", "your bot 0.1");
 
             if (conn.getResponseCode() != 200) {
                 throw new RuntimeException("Failed : HTTP error code : "
@@ -58,7 +53,15 @@ public class RedditSearchScaper {
             while ((output = br.readLine()) != null) {
                 sb.append(output);
             }
-            System.out.println(sb.toString());
+
+            JSONParser parser = new JSONParser();
+            try {
+                JSONObject jobj = (JSONObject) parser.parse(sb.toString());
+                System.out.println(jobj.toJSONString());
+                System.out.println(jobj
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
             conn.disconnect();
 
         } catch (IOException e) {
