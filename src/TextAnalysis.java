@@ -2,6 +2,8 @@
 import org.jsoup.Jsoup;
 
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import javax.print.DocFlavor;
 import java.io.BufferedReader;
@@ -40,6 +42,15 @@ public class TextAnalysis {
 
 
         Document doc = Jsoup.connect("http://www.latimes.com/business/la-fi-uber-funding-20141205-story.html").get();
-        System.out.println(doc.getAllElements().toString());
+
+        Elements texts = doc.getElementsByTag("p");
+        for (Element text : texts) {
+            String textString = text.toString();
+            textString = textString.replaceAll("<p>", "");
+            textString = textString.replaceAll("</p>", "");
+            System.out.println(textString);
+        }
+
     }
+
 }
