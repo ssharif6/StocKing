@@ -45,14 +45,11 @@ public class TextAnalysis {
         Elements texts = doc.getElementsByTag("p");
         for (Element text : texts) {
             String textString = text.toString();
-            textString.replaceAll("<p>", "");
-            textString.replaceAll("</p>", "");
-
-            
-            System.out.println(text);
+            textString = textString.replaceAll("<p>", "");
+            textString = textString.replaceAll("</p>", "");
+            System.out.println(textString);
         }
 
-
-
     }
+
 }
