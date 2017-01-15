@@ -21,10 +21,8 @@ public class TextAnalysis {
 
 
     public static void main(String[] args) throws IOException, JSONException, MalformedURLException {
-
-        double x = getFinalScore("alphabet");
+        double x = getFinalScore("Uber");
         System.out.println(x);
-
     }
 
     // API METHOD

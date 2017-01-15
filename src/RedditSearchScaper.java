@@ -55,8 +55,10 @@ public class RedditSearchScaper {
             JSONObject jobj = new org.json.JSONObject(sb.toString());
 
             JSONArray jArray = jobj.getJSONObject("data").getJSONArray("children");
+            int length = jArray.length();
+            int length2 = length - (length / 3);
             // parse JArray
-            for(int i = 0; i < 12; i++) {
+            for(int i = length / 2; i < length2; i++) {
                 JSONObject obj = jArray.getJSONObject(i);
                 String kind = obj.getString("kind");
                 if(kind.equals("t3")) {
