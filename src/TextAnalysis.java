@@ -23,6 +23,8 @@ public class TextAnalysis {
 
         for (LinkModel link : list) {
             String keywords = getKeywords(link.getPermalink_url());
+            // Get sentiment Analysis
+
         }
 
     }
@@ -43,14 +45,14 @@ public class TextAnalysis {
                 sb.append(textString);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+
         }
 
         return sb.toString();
     }
 
-    public static String getKeywords(String query) {
-        String sanitized = sanitizePage("http://www.latimes.com/business/la-fi-uber-funding-20141205-story.html");
+    public static String getKeywords(String url) {
+        String sanitized = sanitizePage(url);
         KeywordExtraction extractor = new KeywordExtraction(sanitized);
         String keywords = extractor.getKeywords();
         return keywords;
