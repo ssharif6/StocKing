@@ -9,5 +9,17 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="com.github.jreddit:jreddit:1.0.0" level="project" />
     <orderEntry type="library" name="org.jsoup:jsoup:1.10.2" level="project" />
+<<<<<<< HEAD
+=======
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/apacheds-all-1.5.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+>>>>>>> f7dab03... Blah
   </component>
 </module>

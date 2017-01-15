@@ -51,12 +51,15 @@ public class KeywordExtraction {
             os.write(requestString.getBytes());
             os.flush();
 
+<<<<<<< HEAD
 
 //            if (conn.getResponseCode() != HttpURLConnection.HTTP_CREATED) {
 //                throw new RuntimeException("Failed : HTTP error code : "
 //                        + conn.getResponseCode());
 //            }
 
+=======
+>>>>>>> f7dab03... Blah
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     (conn.getInputStream())));
 
