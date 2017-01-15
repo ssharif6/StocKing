@@ -40,16 +40,37 @@ public class TextAnalysis {
 //        System.out.print(sb.toString());
 
 
-        Document doc = Jsoup.connect("http://www.latimes.com/business/la-fi-uber-funding-20141205-story.html").get();
 
-        Elements texts = doc.getElementsByTag("p");
-        for (Element text : texts) {
-            String textString = text.toString();
-            textString = textString.replaceAll("<p>", "");
-            textString = textString.replaceAll("</p>", "");
-            System.out.println(textString);
+
+        getSentimentResult("");
+
+    }
+
+    private static String sanitizePage(String url) {
+        Document doc = null;
+        StringBuilder sb = new StringBuilder();
+        try {
+            doc = Jsoup.connect(url).get();
+            Elements texts = doc.getElementsByTag("p");
+
+            for (Element text : texts) {
+                String textString = text.toString();
+                textString = textString.replaceAll("<p>", "");
+                textString = textString.replaceAll("</p>", "");
+                sb.append(textString);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
+        return sb.toString();
+    }
+
+    public static String getSentimentResult(String query) {
+        String sanitized = sanitizePage("http://www.latimes.com/business/la-fi-uber-funding-20141205-story.html").substring(0, 550);
+        KeywordExtraction extractor = new KeywordExtraction(sanitized);
+        String keywords = extractor.getKeywords();
+        return keywords;
     }
 
 }
