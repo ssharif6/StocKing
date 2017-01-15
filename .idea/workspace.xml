@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9961348a-b5f4-445d-9514-2a4693a51b8d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_jreddit_jreddit_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_jsoup_jsoup_1_10_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DefHacks/TextAnalysis.class" afterPath="$PROJECT_DIR$/out/production/DefHacks/TextAnalysis.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DefHacks.iml" afterPath="$PROJECT_DIR$/DefHacks.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TextAnalysis.java" afterPath="$PROJECT_DIR$/src/TextAnalysis.java" />
     </list>
     <ignored path="StocKing.iws" />
@@ -35,10 +29,20 @@
         <entry file="file://$PROJECT_DIR$/src/TextAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6351351">
-              <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+              <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Element.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/jsoup-1.10.2.jar!/org/jsoup/nodes/Element.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="44.666668">
+              <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -679,12 +683,12 @@
       <created>1484435751402</created>
       <option name="number" value="Default" />
       <updated>1484435751402</updated>
-      <workItem from="1484435754295" duration="3289000" />
+      <workItem from="1484435754295" duration="4507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3289000" />
+    <option name="totallyTimeSpent" value="4507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -759,10 +763,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jsoup-1.10.2.jar!/org/jsoup/nodes/Element.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="44.666668">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TextAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6351351">
-          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
