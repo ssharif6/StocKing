@@ -1,12 +1,7 @@
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-import sun.misc.IOUtils;
-import sun.nio.ch.IOUtil;
+import org.json.*;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -29,7 +24,7 @@ public class RedditSearchScaper {
         this.query = query;
     }
 
-    public List<LinkModel> getRedditLinksFromWeb() throws ProtocolException {
+    public List<LinkModel> getRedditLinksFromWeb() throws ProtocolException, JSONException {
 
         StringBuilder sb = new StringBuilder();
 
@@ -55,13 +50,10 @@ public class RedditSearchScaper {
             }
 
             JSONParser parser = new JSONParser();
-            try {
-                JSONObject jobj = (JSONObject) parser.parse(sb.toString());
-                System.out.println(jobj.toJSONString());
-                System.out.println(jobj
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
+            org.json.JSONObject jobj = new org.json.JSONObject(sb.toString());
+            jobj.getJSONArray()
+
+
             conn.disconnect();
 
         } catch (IOException e) {

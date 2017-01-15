@@ -18,5 +18,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="de.twentyeleven.skysail:org.json-osgi:20080701" level="project" />
   </component>
 </module>

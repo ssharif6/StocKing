@@ -1,4 +1,5 @@
 
+import org.json.JSONException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -10,7 +11,7 @@ import java.io.IOException;
  * Created by shaheensharifian on 1/14/17.
  */
 public class TextAnalysis {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, JSONException {
 //
 
 
@@ -43,7 +44,7 @@ public class TextAnalysis {
         return sb.toString();
     }
 
-    public static String getSentimentResult(String query) {
+    public static String getKeywords(String query) {
         String sanitized = sanitizePage("http://www.latimes.com/business/la-fi-uber-funding-20141205-story.html");
         KeywordExtraction extractor = new KeywordExtraction(sanitized);
         String keywords = extractor.getKeywords();
