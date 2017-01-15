@@ -18,7 +18,7 @@ public class TextAnalysis {
 
         RedditSearchScaper scraper = new RedditSearchScaper("Delta");
         scraper.getRedditLinksFromWeb();
-        //getSentimentResult("");
+        //System.out.println(getKeywords(""));
 
     }
 

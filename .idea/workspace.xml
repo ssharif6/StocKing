@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9961348a-b5f4-445d-9514-2a4693a51b8d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/de_twentyeleven_skysail_org_json_osgi_20080701.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DefHacks/RedditSearchScaper.class" afterPath="$PROJECT_DIR$/out/production/DefHacks/RedditSearchScaper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DefHacks/TextAnalysis.class" afterPath="$PROJECT_DIR$/out/production/DefHacks/TextAnalysis.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DefHacks.iml" afterPath="$PROJECT_DIR$/DefHacks.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RedditSearchScaper.java" afterPath="$PROJECT_DIR$/src/RedditSearchScaper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TextAnalysis.java" afterPath="$PROJECT_DIR$/src/TextAnalysis.java" />
     </list>
@@ -35,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/TextAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,12 +41,10 @@
       <file leaf-file-name="RedditSearchScaper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RedditSearchScaper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5135135">
-              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.6486486">
+              <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/src/LinkModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -144,8 +137,8 @@
         <option value="$PROJECT_DIR$/src/LinkModel.java" />
         <option value="$PROJECT_DIR$/src/RedditSearchScrubber.java" />
         <option value="$PROJECT_DIR$/src/Delta.json" />
-        <option value="$PROJECT_DIR$/src/TextAnalysis.java" />
         <option value="$PROJECT_DIR$/src/KeywordExtraction.java" />
+        <option value="$PROJECT_DIR$/src/TextAnalysis.java" />
         <option value="$PROJECT_DIR$/src/RedditSearchScaper.java" />
       </list>
     </option>
@@ -750,12 +743,12 @@
       <option name="number" value="Default" />
       <updated>1484435751402</updated>
       <workItem from="1484435754295" duration="4507000" />
-      <workItem from="1484447677229" duration="10670000" />
+      <workItem from="1484447677229" duration="12482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15177000" />
+    <option name="totallyTimeSpent" value="16989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -872,14 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Delta.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -903,21 +888,27 @@
     <entry file="file://$PROJECT_DIR$/src/TextAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/RedditSearchScaper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5135135">
-          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.6486486">
+          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
           </folding>
         </state>
       </provider>

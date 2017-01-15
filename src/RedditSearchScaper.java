@@ -1,4 +1,6 @@
-import org.json.simple.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.json.simple.*;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.json.*;
@@ -18,10 +20,12 @@ import java.util.List;
  */
 public class RedditSearchScaper {
     private String query;
+    private List<LinkModel> links;
     private static final String BASE_URL = "https://www.reddit.com/r/business/search.json?q=";
 
     public RedditSearchScaper(String query) {
         this.query = query;
+        this.links = new ArrayList<>();
     }
 
     public List<LinkModel> getRedditLinksFromWeb() throws ProtocolException, JSONException {
@@ -50,8 +54,27 @@ public class RedditSearchScaper {
             }
 
             JSONParser parser = new JSONParser();
-            org.json.JSONObject jobj = new org.json.JSONObject(sb.toString());
-            jobj.getJSONArray()
+            JSONObject jobj = new org.json.JSONObject(sb.toString());
+
+            JSONArray jArray = jobj.getJSONObject("data").getJSONArray("children");
+            // parse JArray
+            for(int i = 0; i < jArray.length(); i++) {
+
+                JSONObject obj = jArray.getJSONObject(i);
+                String kind = obj.getString("kind");
+                if(kind.equals("t3")) {
+                    JSONObject innerObj = obj.getJSONObject("data");
+                    LinkModel linkModel = new LinkModel();
+                    int score = innerObj.getInt("score");
+                    String subreddit = innerObj.getString("subreddit");
+                    String id = innerObj.getString("id");
+                    String url1 = innerObj.getString("url");
+                    
+                }
+
+
+
+            }
 
 
             conn.disconnect();
