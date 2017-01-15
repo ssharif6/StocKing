@@ -10,7 +10,10 @@
     <orderEntry type="library" name="com.github.jreddit:jreddit:1.0.0" level="project" />
     <orderEntry type="library" name="org.jsoup:jsoup:1.10.2" level="project" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f7dab03... Blah
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -20,6 +23,9 @@
         <SOURCES />
       </library>
     </orderEntry>
+<<<<<<< HEAD
+>>>>>>> f7dab03... Blah
+=======
 >>>>>>> f7dab03... Blah
   </component>
 </module>

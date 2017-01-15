@@ -1,6 +1,7 @@
 
 import org.jsoup.Jsoup;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -15,11 +16,16 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 =======
+=======
+>>>>>>> f7dab03... Blah
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import java.io.IOException;
 
+<<<<<<< HEAD
+>>>>>>> f7dab03... Blah
+=======
 >>>>>>> f7dab03... Blah
 
 /**
@@ -27,6 +33,7 @@ import java.io.IOException;
  */
 public class TextAnalysis {
     public static void main(String[] args) throws IOException {
+<<<<<<< HEAD
 <<<<<<< HEAD
 //        URL url = new URL("http://www.latimes.com/business/la-fi-uber-funding-20141205-story.html");
 //        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -54,6 +61,8 @@ public class TextAnalysis {
 
         getSentimentResult("");
 =======
+=======
+>>>>>>> f7dab03... Blah
 //
 
 
@@ -61,6 +70,9 @@ public class TextAnalysis {
         RedditSearchScaper scraper = new RedditSearchScaper("Delta");
         scraper.getRedditLinksFromWeb();
         //getSentimentResult("");
+<<<<<<< HEAD
+>>>>>>> f7dab03... Blah
+=======
 >>>>>>> f7dab03... Blah
 
     }
@@ -77,6 +89,11 @@ public class TextAnalysis {
                 textString = textString.replaceAll("<p>", "");
                 textString = textString.replaceAll("</p>", "");
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                textString = textString.replaceAll("<a ", "");
+                textString = textString.replaceAll("/a>", "");
+>>>>>>> f7dab03... Blah
 =======
                 textString = textString.replaceAll("<a ", "");
                 textString = textString.replaceAll("/a>", "");
@@ -92,7 +109,11 @@ public class TextAnalysis {
 
     public static String getSentimentResult(String query) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         String sanitized = sanitizePage("http://www.latimes.com/business/la-fi-uber-funding-20141205-story.html").substring(0, 550);
+=======
+        String sanitized = sanitizePage("http://www.latimes.com/business/la-fi-uber-funding-20141205-story.html");
+>>>>>>> f7dab03... Blah
 =======
         String sanitized = sanitizePage("http://www.latimes.com/business/la-fi-uber-funding-20141205-story.html");
 >>>>>>> f7dab03... Blah
