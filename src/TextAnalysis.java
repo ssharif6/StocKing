@@ -22,7 +22,7 @@ public class TextAnalysis {
 
     public static void main(String[] args) throws IOException, JSONException, MalformedURLException {
 
-        double x = getFinalScore("Uber");
+        double x = getFinalScore("alphabet");
         System.out.println(x);
 
     }
@@ -30,11 +30,10 @@ public class TextAnalysis {
     // API METHOD
     public static double getFinalScore(String query) throws JSONException, ProtocolException {
         int totalRedditScore = 0;
-        double totalEvalScore = 0.0;
         double resultFinal = 0.0;
         double totalWeight = 0.0;
 
-        RedditSearchScaper scraper = new RedditSearchScaper("Delta");
+        RedditSearchScaper scraper = new RedditSearchScaper(query);
 
         List<LinkModel> list = scraper.getRedditLinksFromWeb();
 
@@ -43,7 +42,6 @@ public class TextAnalysis {
             double score = getSentScore(keywords);
             if (score > 0 || !keywords.isEmpty()) {
                 link.setEval_score(score);
-                totalEvalScore += score;
                 totalRedditScore += link.getScore();
             } else {
                 link.setBroken(true);
@@ -60,7 +58,6 @@ public class TextAnalysis {
                 totalWeight += weight;
             }
         }
-        System.out.println("ResultFinal : " + resultFinal);
         return (resultFinal / totalWeight);
     }
 
