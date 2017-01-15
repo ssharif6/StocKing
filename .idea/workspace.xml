@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9961348a-b5f4-445d-9514-2a4693a51b8d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LinkModel.java" afterPath="$PROJECT_DIR$/src/LinkModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RedditSearchScaper.java" afterPath="$PROJECT_DIR$/src/RedditSearchScaper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TextAnalysis.java" afterPath="$PROJECT_DIR$/src/TextAnalysis.java" />
     </list>
@@ -26,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TextAnalysis.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TextAnalysis.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TextAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state vertical-scroll-proportion="-0.4385965">
+              <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,13 +39,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedditSearchScaper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedditSearchScaper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RedditSearchScaper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6486486">
-              <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2937#2938#0" expanded="true" />
+                <element signature="e#2970#2971#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,8 +67,20 @@
         <entry file="file://$PROJECT_DIR$/src/LinkModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-              <folding />
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+              <folding>
+                <element signature="e#141#142#0" expanded="true" />
+                <element signature="e#170#171#0" expanded="true" />
+                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#252#253#0" expanded="true" />
+                <element signature="e#279#280#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#362#363#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/KeywordExtraction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#632#633#0" expanded="true" />
@@ -134,12 +149,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LinkModel.java" />
         <option value="$PROJECT_DIR$/src/RedditSearchScrubber.java" />
         <option value="$PROJECT_DIR$/src/Delta.json" />
         <option value="$PROJECT_DIR$/src/KeywordExtraction.java" />
-        <option value="$PROJECT_DIR$/src/TextAnalysis.java" />
         <option value="$PROJECT_DIR$/src/RedditSearchScaper.java" />
+        <option value="$PROJECT_DIR$/src/LinkModel.java" />
+        <option value="$PROJECT_DIR$/src/TextAnalysis.java" />
       </list>
     </option>
   </component>
@@ -743,12 +758,12 @@
       <option name="number" value="Default" />
       <updated>1484435751402</updated>
       <workItem from="1484435754295" duration="4507000" />
-      <workItem from="1484447677229" duration="12482000" />
+      <workItem from="1484447677229" duration="14604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16989000" />
+    <option name="totallyTimeSpent" value="19111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -761,7 +776,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2315341" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -873,10 +888,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/RedditSearchScaper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2937#2938#0" expanded="true" />
+            <element signature="e#2970#2971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LinkModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding>
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/KeywordExtraction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#632#633#0" expanded="true" />
@@ -887,26 +934,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TextAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RedditSearchScaper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6486486">
-          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+        <state vertical-scroll-proportion="-0.4385965">
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

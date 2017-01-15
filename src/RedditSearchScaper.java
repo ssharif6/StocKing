@@ -1,8 +1,6 @@
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.json.simple.*;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 import org.json.*;
 
 import java.io.*;
@@ -31,6 +29,7 @@ public class RedditSearchScaper {
     public List<LinkModel> getRedditLinksFromWeb() throws ProtocolException, JSONException {
 
         StringBuilder sb = new StringBuilder();
+        List<LinkModel> res = new ArrayList<>();
 
         try {
             URL url = new URL(BASE_URL + this.query + "&restrict_sr=on");
@@ -59,21 +58,19 @@ public class RedditSearchScaper {
             JSONArray jArray = jobj.getJSONObject("data").getJSONArray("children");
             // parse JArray
             for(int i = 0; i < jArray.length(); i++) {
-
                 JSONObject obj = jArray.getJSONObject(i);
                 String kind = obj.getString("kind");
                 if(kind.equals("t3")) {
                     JSONObject innerObj = obj.getJSONObject("data");
-                    LinkModel linkModel = new LinkModel();
                     int score = innerObj.getInt("score");
                     String subreddit = innerObj.getString("subreddit");
                     String id = innerObj.getString("id");
                     String url1 = innerObj.getString("url");
-                    
+                    int ups = innerObj.getInt("ups");
+                    int downs = innerObj.getInt("downs");
+                    LinkModel linkModel = new LinkModel(subreddit, id, score, ups, downs, url1);
+                    res.add(linkModel);
                 }
-
-
-
             }
 
 
@@ -83,6 +80,10 @@ public class RedditSearchScaper {
             e.printStackTrace();
         }
 
-        return new ArrayList<>();
+        return res;
+    }
+
+    public List<LinkModel> getLinks() {
+        return this.links;
     }
 }

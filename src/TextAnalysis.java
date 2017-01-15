@@ -5,6 +5,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import java.io.IOException;
+import java.util.List;
 
 
 /**
@@ -17,8 +18,12 @@ public class TextAnalysis {
 
 
         RedditSearchScaper scraper = new RedditSearchScaper("Delta");
-        scraper.getRedditLinksFromWeb();
-        //System.out.println(getKeywords(""));
+
+        List<LinkModel> list = scraper.getRedditLinksFromWeb();
+
+        for (LinkModel link : list) {
+            String keywords = getKeywords(link.getPermalink_url());
+        }
 
     }
 
