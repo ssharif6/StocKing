@@ -1,5 +1,4 @@
 
-import org.apache.commons.validator.routines.UrlValidator;
 import org.json.JSONException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -19,21 +18,26 @@ import java.util.List;
 public class TextAnalysis {
     public static void main(String[] args) throws IOException, JSONException, MalformedURLException {
 
-        RedditSearchScaper scraper = new RedditSearchScaper("Delta");
+        RedditSearchScaper scraper = new RedditSearchScaper("Apple");
 
         List<LinkModel> list = scraper.getRedditLinksFromWeb();
 
         for (LinkModel link : list) {
-            if(isValidURL(link.getPermalink_url())) {
                 String keywords = getKeywords(link.getPermalink_url());
-                System.out.println(keywords);
-            }
+                double score = getSentScore(keywords);
+                if (score > 0 || !keywords.isEmpty()) {
+                    System.out.println(score);
+                    System.out.println(keywords);
+                }
             // Get sentiment Analysis
 
         }
 
     }
-
+    public static double getSentScore(String keywords) {
+        SentimentEval eval = new SentimentEval(keywords);
+        return eval.evalScore();
+    }
     private static String sanitizePage(String url) {
 
         Document doc = null;
@@ -62,12 +66,6 @@ public class TextAnalysis {
         return sb.toString();
     }
 
-    private static boolean isValidURL(String url) {
-
-        String[] schemes = {"http","https"}; // DEFAULT schemes = "http", "https", "ftp"
-        UrlValidator urlValidator = new UrlValidator(schemes);
-        return (urlValidator.isValid(url));
-    }
 
     public static String getKeywords(String url) {
         String sanitized = sanitizePage(url);
