@@ -34,6 +34,7 @@ public class KeywordExtraction {
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");
             conn.setRequestProperty("Ocp-Apim-Subscription-Key", TEXT_KEY);
+            conn.setDoOutput(true);
             List<JSONObject> list = new ArrayList<>();
 
             JSONObject obj = new JSONObject();
@@ -47,12 +48,14 @@ public class KeywordExtraction {
             String requestString = obj.toString();
 
             OutputStream os = conn.getOutputStream();
+            os.write(requestString.getBytes());
             os.flush();
 
-            if (conn.getResponseCode() != HttpURLConnection.HTTP_CREATED) {
-                throw new RuntimeException("Failed : HTTP error code : "
-                        + conn.getResponseCode());
-            }
+
+//            if (conn.getResponseCode() != HttpURLConnection.HTTP_CREATED) {
+//                throw new RuntimeException("Failed : HTTP error code : "
+//                        + conn.getResponseCode());
+//            }
 
             BufferedReader br = new BufferedReader(new InputStreamReader(
                     (conn.getInputStream())));
