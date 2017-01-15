@@ -1,3 +1,5 @@
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.simple.JSONObject;
 
 import java.io.BufferedReader;
@@ -27,6 +29,7 @@ public class KeywordExtraction {
     public String getKeywords() {
         StringBuilder sb = new StringBuilder();
         String output = "";
+        StringBuilder c = new StringBuilder();
 
         try {
             URL url = new URL(BASE_URL);
@@ -35,6 +38,8 @@ public class KeywordExtraction {
             conn.setRequestProperty("Content-Type", "application/json");
             conn.setRequestProperty("Ocp-Apim-Subscription-Key", TEXT_KEY);
             conn.setDoOutput(true);
+
+
             List<JSONObject> list = new ArrayList<>();
 
             JSONObject obj = new JSONObject();
@@ -56,15 +61,33 @@ public class KeywordExtraction {
 
             System.out.println("Output from Server .... \n");
             while ((output = br.readLine()) != null) {
-                System.out.println(output);
+                sb.append(output);
             }
 
             conn.disconnect();
+            try {
+                String blah = sb.toString();
+                org.json.JSONObject jObj = new org.json.JSONObject(sb.toString());
+
+
+                org.json.JSONArray arr = jObj.getJSONArray("documents");
+                org.json.JSONObject obj2 = arr.getJSONObject(0);
+                JSONArray innerArray = obj2.getJSONArray("keyPhrases");
+                c.append(innerArray.getString(0));
+                for(int i = 1; i < innerArray.length(); i++) {
+                    c.append(" " );
+                    c.append(innerArray.getString(i));
+                }
+
+
+            } catch (JSONException e) {
+                System.out.println("ERROR");
+            }
 
         } catch (java.io.IOException e) {
-            e.printStackTrace();
+            return "";
         }
 
-        return output;
+        return c.toString();
     }
 }
