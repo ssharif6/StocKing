@@ -67,7 +67,7 @@ public class RedditSearchScaper {
                     String url1 = innerObj.getString("url");
                     int ups = innerObj.getInt("ups");
                     int downs = innerObj.getInt("downs");
-                    LinkModel linkModel = new LinkModel(subreddit, id, score, ups, downs, url1);
+                    LinkModel linkModel = new LinkModel(false, 0.0, subreddit, id, score, ups, downs, url1);
                     res.add(linkModel);
                 }
             }

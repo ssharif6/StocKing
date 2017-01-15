@@ -26,6 +26,10 @@ public class LinkModel {
         return permalink_url;
     }
 
+    public double getEval_score() {
+        return eval_score;
+    }
+
     private String subreddit;
     private String id;
     private int score;
@@ -33,12 +37,30 @@ public class LinkModel {
     private int downs;
     private String permalink_url;
 
-    public LinkModel(String subreddit, String id, int score, int ups, int downs, String url) {
+    public void setBroken(boolean broken) {
+        isBroken = broken;
+    }
+
+    public boolean isBroken() {
+        return isBroken;
+    }
+
+    private boolean isBroken;
+
+    public void setEval_score(double eval_score) {
+        this.eval_score = eval_score;
+    }
+
+    private double eval_score;
+
+    public LinkModel(boolean isBroken, double eval_score, String subreddit, String id, int score, int ups, int downs, String url) {
         this.subreddit = subreddit;
         this.id = id;
         this.score = score;
         this.ups = ups;
+        this.eval_score = eval_score;
         this.downs = downs;
         this.permalink_url = url;
+        this.isBroken = isBroken;
     }
 }
