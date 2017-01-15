@@ -1,3 +1,5 @@
+package org.lasred;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -56,7 +58,7 @@ public class RedditSearchScaper {
 
             JSONArray jArray = jobj.getJSONObject("data").getJSONArray("children");
             // parse JArray
-            for(int i = 0; i < jArray.length(); i++) {
+            for(int i = 0; i < 12; i++) {
                 JSONObject obj = jArray.getJSONObject(i);
                 String kind = obj.getString("kind");
                 if(kind.equals("t3")) {
