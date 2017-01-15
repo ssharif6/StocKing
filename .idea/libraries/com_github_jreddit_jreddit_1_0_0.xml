@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.github.jreddit:jreddit:1.0.0" type="repository">
+    <properties maven-id="com.github.jreddit:jreddit:1.0.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jreddit-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json-simple-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/hamcrest-core-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
